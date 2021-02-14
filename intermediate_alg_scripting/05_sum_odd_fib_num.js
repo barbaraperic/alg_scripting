@@ -4,7 +4,7 @@ function sumFib(num) {
   const arrFib = [1, 1];
   let nextFib = 0;
 
-  while(nextFib = arrFib[0] + arrFib[1] <= num) {
+  while((nextFib = arrFib[0] + arrFib[1]) <= num) {
     arrFib.unshift(nextFib);
   }
 
