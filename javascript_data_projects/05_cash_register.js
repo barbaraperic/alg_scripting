@@ -10,7 +10,6 @@ var denom = [
   { name: "PENNY", val: 0.01 }
 ];
 
-
 function checkCashRegister(price, cash, cid) {
 
   let output = { status: null, change: []}
