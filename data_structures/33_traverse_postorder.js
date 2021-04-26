@@ -1,4 +1,4 @@
-// lrn
+// lnr
 
 var displayTree = tree => console.log(JSON.stringify(tree, null, 2));
 function Node(value) {
@@ -15,8 +15,8 @@ function BinarySearchTree() {
     let queue = [];
     function traverse(node) {
       traverse(node.left);
-      traverse(node.right);
       queue.push(node);
+      traverse(node.right);
     }
 
     traverse(this.root)
