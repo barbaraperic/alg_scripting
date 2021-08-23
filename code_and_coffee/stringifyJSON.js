@@ -18,8 +18,7 @@ function stringifyJSON(item) {
   }
   objString += '}'
 
-  console.log(objString)
-
+  return objString
   // implement here
 }
 
