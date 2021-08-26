@@ -11,16 +11,8 @@
 
 const sumTwo = (array, target) => {
   let sum = 0;
-  const sumArr = array.map((num, index) => {
-    if (sum === target) {
-      return index
-    }
-    sum += num;
-     // sum += num
-    // if (num + sum === target) {
-    //   return num[index]
-    // }
-    
+  array.forEach((number, index) => {
+    sum = number[index]
   })
 
   console.log(sumArr)
