@@ -2,11 +2,16 @@
 // They define properties and behaviors that will belong to the new object. 
 // blueprint for objects
 
-
-function Dog() {
-  this.name = "Colorful";
-  this.color = "Red";
-  this.numLegs = 3;
+function Bird(name) {
+  this.name = name;
+  this.numLegs = 2;
 }
 
-// const hound = new Dog()
+let canary = new Bird("Tweety");
+
+let ownProps = [];
+for (let property in canary) {
+  if (canary.hasOwnProperty(property)) {
+    ownProps.push(property)
+  }
+}
