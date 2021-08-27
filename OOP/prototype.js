@@ -4,10 +4,17 @@ function Dog(name) {
   this.name = name;
 }
 
-Dog.prototype.numLegs = 4
+// Dog.prototype.numLegs = 4
+
+Dog.prototype = {
+  constructor: Dog,
+  numLegs: 4
+}
 
 // Only change code above this line
 let beagle = new Dog("Snoopy");
+
+Dog.prototype.isPrototypeOf(beagle)
 
 let ownProps = [];
 let prototypeProps = [];
